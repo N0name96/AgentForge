@@ -1,0 +1,18 @@
+[project]
+name = "agentforge"
+version = "0.1.0"
+description = "Cli for creating protable AI Agents"
+requires-python = ">=3.11"
+
+dependencies = [
+    "typer",
+    "rich",
+    "questionary"
+]
+
+[project.scripts]
+agentforge = "agentforge.cli.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
